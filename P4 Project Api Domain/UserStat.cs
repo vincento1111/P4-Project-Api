@@ -13,6 +13,8 @@ namespace P4ProjectApi.Domain
         public int Speed { get; set; }
         public int Dexterity { get; set; }
         public int Level { get; set; }
+        public int Experience { get; set; }
+        public int Health { get; set; }
 
     }
 }

@@ -8,6 +8,7 @@ namespace P4ProjectApi.Domain
     {
         public int InventoryId { get; set; }
         public User User { get; set; }
+        public Item Item { get; set; }
         public int Money { get; set; }
 
     }
