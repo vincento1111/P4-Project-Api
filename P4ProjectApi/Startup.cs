@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Cors;
 
 namespace P4ProjectApi
 {
@@ -39,7 +40,10 @@ namespace P4ProjectApi
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            app.UseCors(builder => builder
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader());
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

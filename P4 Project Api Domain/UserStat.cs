@@ -4,7 +4,7 @@ using System.Text;
 
 namespace P4ProjectApi.Domain
 {
-    class UserStat
+    public class UserStat
     {
         public int StatId { get; set; }
         public User User { get; set; }

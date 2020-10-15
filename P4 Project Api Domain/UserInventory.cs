@@ -4,7 +4,7 @@ using System.Text;
 
 namespace P4ProjectApi.Domain
 {
-    class UserInventory
+    public class UserInventory
     {
         public int InventoryId { get; set; }
         public User User { get; set; }

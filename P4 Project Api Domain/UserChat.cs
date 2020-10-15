@@ -4,7 +4,7 @@ using System.Text;
 
 namespace P4ProjectApi.Domain
 {
-    class UserChats
+    public class UserChat
     {
         public int MessegeId { get; set; }
         public User User { get; set; }
